@@ -1,5 +1,5 @@
 defmodule GuessingGame do
-    def guess(a, b) when a > b, do : guess(b, a)
+    def guess(a, b) when a > b, do: guess(b, a)
     # this function is only called when right parameter is higher than the left one.
 
     def guess(low, high) do
@@ -14,7 +14,7 @@ defmodule GuessingGame do
         end
     end
 
-    def mid(low, high), do : div(low + high, 2) 
+    def mid(low, high), do: div(low + high, 2) 
     # "div" make a division /w integer as a result ("rem" giv the rest of "div").
 
     def bigger(low, high) do
